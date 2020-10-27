@@ -1,4 +1,4 @@
-package com.example.tik_tak_toe;
+package com.example.tic_tac_toe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
