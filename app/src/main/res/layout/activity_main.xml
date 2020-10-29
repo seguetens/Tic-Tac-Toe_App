@@ -7,31 +7,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="#FF5722"
     android:gravity="center|top"
     tools:context=".MainActivity">
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/header_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
+        android:background="#000000"
+        android:fontFamily="@font/akronim"
         android:text="@string/tic_tac_toe"
-        android:textSize="24sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#F4511E"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="32dp"
+        android:id="@+id/new_game_button"
+        android:layout_width="116dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="40dp"
+        android:background="#000000"
+        android:fontFamily="@font/akronim"
         android:text="@string/new_game"
+        android:textColor="#F4511E"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:id="@+id/game_board"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:background="#F4511E"
+        android:gravity="center|center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/new_game_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_title">
+
+        <TableRow
+            android:id="@+id/topRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/leftCell"
+                android:layout_width="132dp"
+                android:layout_height="100dp"
+                android:text="" />
+        </TableRow>
+
+    </TableLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
