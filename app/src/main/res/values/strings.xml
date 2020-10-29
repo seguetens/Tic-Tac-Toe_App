@@ -2,4 +2,7 @@
     <string name="app_name">Tic-Tac-Toe</string>
     <string name="tic_tac_toe">Tic-Tac-Toe!</string>
     <string name="new_game">New Game</string>
+    <string name="turn">Turn:     </string>
+    <string name="ghost_image">Ghost image</string>
+    <string name="pumpkin_image">Pumpkin Image</string>
 </resources>
