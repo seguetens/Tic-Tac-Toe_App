@@ -5,4 +5,7 @@
     <string name="turn">Turn:     </string>
     <string name="ghost_image">Ghost image</string>
     <string name="pumpkin_image">Pumpkin Image</string>
+    <string name="choose_x_or_o">Choose X or O:</string>
+    <string name="x">X</string>
+    <string name="o">O</string>
 </resources>
