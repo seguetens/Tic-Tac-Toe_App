@@ -1,9 +1,8 @@
 package com.example.tic_tac_toe;
 
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,9 +13,30 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_startup);
+
+        final Button button_x = findViewById(R.id.x_button);
+        button_x.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                setContentView(R.layout.activity_main);
+                Game.startGame(0);
+            }
+        });
+
+        final Button button_o = findViewById(R.id.o_button);
+        button_o.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                setContentView(R.layout.activity_main);
+                Game.startGame(1);
+            }
+        });
+
+
     }
 
-    public void launchSecondActivity(View view) {
-        Log.d(LOG_TAG, "Choice made");
-    }
+
+
+
+
+
+
 }
