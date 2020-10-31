@@ -8,6 +8,12 @@ import android.widget.Button;
 
 public class Cell {
 
-    public Button cell;
+    protected Button newCell;
 
+    /**
+     * @param b Button that makes up the cell
+     */
+    public  Cell (Button b){
+        b = newCell;
+    }
 }
